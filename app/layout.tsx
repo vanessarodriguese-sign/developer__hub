@@ -17,7 +17,7 @@ export default function RootLayout ({
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/reviews">Reviews</Link>
+                <Link href="/reviews">ReviewsNEW</Link>
               </li>
               <li>
                 <Link href="/reviews/book">BookBook</Link>
