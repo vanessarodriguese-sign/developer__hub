@@ -4,5 +4,5 @@ import React from 'react'
 export default function Page () {
   console.log('Running on the server')
   console.log(process.env.NEXT_PUBLIC_APP_URL)
-  return <h1>Starting the new developer hub</h1>
+  return <h1 data-testid="cypress-title">Starting the new developer hub</h1>
 }
