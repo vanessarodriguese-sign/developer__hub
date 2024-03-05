@@ -23,7 +23,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/assets/*": ["./public/assets/*"]
     }
   },
   "include": [
@@ -33,7 +33,7 @@
     "**/*.tsx",
     "next.config.js",
     "tailwind.config.js"
-  ],
+, "components/MainButtontsx"  ],
   "exclude": [
     "node_modules"
   ]

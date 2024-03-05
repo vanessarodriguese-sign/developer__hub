@@ -1,31 +1,35 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import EsignLogoD from '@/assets/esign-logo-desktop.svg'
+import { MainButton } from './MainButton'
+import NavBarLink from './NavBarLink'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function NavBar () {
   return (
-    <nav className='bg-dark-blue pt-14 pb-12'>
-      <div className="flex row-auto text-white">
-        <div className='mx-32 my-10'>
+    <nav className='bg-dark-blue navbar-links'>
+      <div className='flex flex-row pt-10 pb-12 items-center'>
+        <div className='px-127'>
           <Image
             data-testid='logo'
             className=''
             src={EsignLogoD}
             alt="Esign Logo"
+            width={150.71}
+            height={51}
           />
         </div>
-        <div className='flex row-auto gap-4 me-6 pt-14 pb-12' data-testid="navbar-links">
-          <div><Link href="/" className='hover:underline'>GET STARTED</Link></div>
-          <div><Link href="" className='hover:underline'>API REFERENCE</Link></div>
-          <div><Link href="" className='hover:underline'>API GUIDES</Link></div>
-          <div><Link href="" className='hover:underline'>API DEMOS</Link></div>
-          <div><Link href="" className='hover:underline'>SUPPORT</Link></div>
-          <div><Link href="">CHANGELOG</Link></div>
+        <div className='flex flex-grow items-center' data-testid='navbar-links'>
+          <NavBarLink href='/' label='GET STARTED'/>
+          <NavBarLink href='' label='API REFERENCE'/>
+          <NavBarLink href='' label='API GUIDES'/>
+          <NavBarLink href='' label='API DEMO'/>
+          <NavBarLink href='' label='SUPPORT'/>
+          <NavBarLink href='' label= 'CHANGELOG'/>
         </div>
-        <div className='flex row-auto gap-4 me-6 pt-14 pb-12'>
-          Buttons
+        <div className='flex flex-row ml-auto items-center ps-6 pe-123 gap-4'>
+          <MainButton href='' content='LOGIN' bg ='bg-light-blue' color='text-dark-blue' borderColor='border-dark-blue'/>
+          <MainButton href='' content='CONTACT US' bg ='bg-dark-blue' color='text-white' borderColor='border-blue'/>
         </div>
       </div>
     </nav>
