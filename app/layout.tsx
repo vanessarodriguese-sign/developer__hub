@@ -1,7 +1,10 @@
 import React from 'react'
 import type { ReactNode } from 'react'
+// import NavBar from '../components/NavBar'
+import { Providers } from './providers'
+import { nunito } from './fonts'
 import './globals.css'
-import NavBar from '../components/NavBar'
+import NavBarTest from '../components/NavBarTest'
 
 interface LayoutProps {
   children: ReactNode
@@ -10,15 +13,17 @@ interface LayoutProps {
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function RootLayout ({ children }: LayoutProps) {
   return (
-    <html lang="en">
-      <body className="bg-orange-50 flex flex-col min-h-screen">
+    <html lang="en" className={nunito.variable}>
+      <body className='flex flex-col min-h-screen'>
         <header>
           <nav>
-            <NavBar/>
+            <NavBarTest/>
           </nav>
         </header>
         <main className="grow py-3">
-          {children}
+          <Providers>
+            {children}
+          </Providers>
         </main>
         <footer className="border-t py-3 text-center text-xs">
           Game data and images courtesy
