@@ -1,48 +1,48 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 @layer base {
   /* h1:48px ---  mobile h1:33px  --- tablet h1:34px*/
   h1 {
-    @apply lg:text-5xl lg:leading-49 lg:font-semibold
-            sm:text-33 sm:leading-40 sm:font-semibold
-            md:text-34 md:leading-40 md:font-semibold
+    @apply text-5xl leading-49 font-semibold
+          sm:text-33 md:text-34 lg:text-5xl
+          sm:leading-40 md:leading-40 lg:leading-49 
+          sm:font-semibold md:font-semibold lg:font-semibold 
+          m-0 !important;
   }
   /* h2:36px  ---  mobile h2:28px --- tablet h2:22px*/
   h2 {
-    @apply lg:text-4xl lg:leading-43 lg:font-semibold
-            sm:text-28 sm:leading-32 sm:font-semibold
-            md:text-22 md:leading-30 md:font-semibold
+    @apply text-4xl leading-43 font-semibold
+          sm:text-28 md:text-22 lg:text-4xl 
+          sm:leading-32 md:leading-30 lg:leading-43 
+          sm:font-semibold md:font-semibold lg:font-semibold 
+          m-0 !important;
   }
   /* h3:24px  ---  mobile h3:22px --- tablet h3:18px*/
   h3 {
-    @apply lg:text-2xl lg:leading-30 lg:font-semibold
-            sm:text-22 sm:leading-26 sm:font-semibold
-            md:text-lg md:leading-26 md:font-semibold
+    @apply text-2xl leading-30 font-semibold
+          sm:text-22 md:text-lg lg:text-2xl 
+          sm:leading-26 md:leading-26 lg:leading-30 
+          sm:font-semibold md:font-semibold lg:font-semibold 
+          m-0 !important;
   }
   /* h4:18px ---  mobile h4:18px --- tablet h4:15px */
   h4 {
-    @apply lg:text-lg lg:leading-24 lg:font-semibold 
-            sm:text-lg sm:leading-24 sm:font-semibold
-            md:text-15 md:leading-20 md:font-semibold
+    @apply text-lg leading-24 font-semibold
+          sm:text-lg md:text-15 lg:text-lg 
+          sm:leading-24 md:leading-20 lg:leading-24 
+          sm:font-semibold md:font-semibold lg:font-semibold 
+          m-0 !important;
   }
+  
   /* h5:16px */
   h5 {
-    @apply lg:text-base lg:font-light
+    @apply text-base font-light m-0 !important;
   }
   /* p:14px */
   p {
-    @apply lg:text-sm lg:leading-19
+    @apply text-sm leading-19 m-0 !important;
   }
 }
 
-.navbar-links {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white
-}
+@tailwind utilities;
