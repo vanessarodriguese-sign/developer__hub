@@ -1,10 +1,9 @@
 import React from 'react'
 import type { ReactNode } from 'react'
-// import NavBar from '../components/NavBar'
-import { Providers } from './providers'
 import { nunito } from './fonts'
 import './globals.css'
-import NavBarTest from '../components/NavBarTest'
+import NavBar from '../components/NavBar'
+import { Footer } from '@/components/Footer'
 
 interface LayoutProps {
   children: ReactNode
@@ -17,17 +16,14 @@ export default function RootLayout ({ children }: LayoutProps) {
       <body className='flex flex-col min-h-screen'>
         <header>
           <nav>
-            <NavBarTest/>
+            <NavBar/>
           </nav>
         </header>
-        <main className="grow py-3">
-          <Providers>
-            {children}
-          </Providers>
+        <main className="">
+          {children}
         </main>
-        <footer className="border-t py-3 text-center text-xs">
-          Game data and images courtesy
-          of <a href="https://rawg.io/" target="_blank" rel="noreferrer">RAWG</a>
+        <footer className=''>
+          <Footer/>
         </footer>
       </body>
     </html>

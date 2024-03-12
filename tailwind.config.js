@@ -1,12 +1,9 @@
-import { nextui } from '@nextui-org/react'
-
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
     './app/**/*.{jsx,tsx}',
-    './components/**/*.{jsx,tsx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{jsx,tsx}'
+    './components/**/*.{jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -15,6 +12,8 @@ module.exports = {
         blue: '#68C6DF',
         'light-blue': '#F2F7FD',
         'dark-gray': '#464B50',
+        'medium-gray': '#CBCBCB',
+        gray: '#E2E2E2',
         'light-gray': '#F8F8F8'
       },
       fontFamily: {
@@ -47,9 +46,24 @@ module.exports = {
         40: '40px',
         43: '43px',
         49: '49px'
+      },
+      height: {
+        carousel: '652px'
+      },
+      width: {
+        1: '1120px',
+        2: '740px',
+        3: '360px',
+        4: '265px',
+        5: '170px'
       }
     }
   },
-  darkMode: 'class',
-  plugins: [nextui()]
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
+      fontWeight: ['hover']
+    }
+  },
+  plugins: []
 }

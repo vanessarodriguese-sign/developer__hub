@@ -5,6 +5,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": ["cypress", "node"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -23,18 +24,22 @@
       }
     ],
     "paths": {
-      "@/assets/*": ["./public/assets/*"]
+      "@/assets/*": ["./public/assets/*"],
+      "@/components/*": ["./components/*"]
     }
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
+    "cypress/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "tailwind.config.js"
-, "components/MainButtontsx"  ],
+    "tailwind.config.js",
+    "components/MainButtontsx"  
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./cypress/*"
   ]
 }
