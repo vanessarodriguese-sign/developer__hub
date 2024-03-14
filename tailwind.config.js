@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue': '#23244B',
+        navy: '#09164F',
         blue: '#68C6DF',
         'light-blue': '#F2F7FD',
         'dark-gray': '#464B50',
@@ -24,6 +25,7 @@ module.exports = {
         15: '15px',
         22: '22px',
         28: '28px',
+        32: '32px',
         33: '33px',
         34: '34px'
       },
@@ -32,11 +34,14 @@ module.exports = {
         127: '127px'
       },
       screens: {
-        sm: '375px',
-        md: '820px',
-        lg: '1366px'
+        sm: { max: '375px' },
+        md: { min: '376px', max: '820px' },
+        lg: { min: '821px' }
       },
       lineHeight: {
+        14: '14px',
+        16: '16px',
+        18: '18px',
         19: '19px',
         20: '20px',
         24: '24px',
@@ -48,14 +53,20 @@ module.exports = {
         49: '49px'
       },
       height: {
-        carousel: '652px'
+        652: '652px'
       },
       width: {
-        1: '1120px',
-        2: '740px',
-        3: '360px',
-        4: '265px',
-        5: '170px'
+        1366: '1366px',
+        1120: '1120px',
+        820: '820px',
+        740: '740px',
+        375: '375px',
+        360: '360px',
+        318: '318px',
+        302: '302px',
+        265: '265px',
+        262: '262px',
+        170: '170px'
       }
     }
   },

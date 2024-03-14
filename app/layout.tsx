@@ -13,7 +13,7 @@ interface LayoutProps {
 export default function RootLayout ({ children }: LayoutProps) {
   return (
     <html lang="en" className={nunito.variable}>
-      <body className='flex flex-col min-h-screen'>
+      <body className='flex flex-col h-screen w-screen'>
         <header>
           <nav>
             <NavBar/>
