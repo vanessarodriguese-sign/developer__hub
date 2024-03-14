@@ -6,20 +6,21 @@ interface MainButtonProps {
   color: string
   bg: string
   borderColor: string
-  width?: string
-  height?: string
+  textSize: string
+  lineHeight: string
+  paddingX: string
+  paddingY: string
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function MainButton (props: MainButtonProps) {
   return (
     <a href={props.href}>
-      <p
-        className={`border rounded text-sm py-2 px-6 ${props.bg} ${props.color} ${props.borderColor}`}
-        style={{ width: props.width, height: props.height }}
+      <div
+        className={`border rounded font-extrabold ${props.paddingX} ${props.paddingY} ${props.lineHeight} ${props.textSize} ${props.bg} ${props.color} ${props.borderColor}`}
       >
         {props.content}
-      </p>
+      </div>
     </a>
   )
 }
