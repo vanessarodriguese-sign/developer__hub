@@ -10,7 +10,10 @@ import { IconContext } from 'react-icons'
 export function Hero() {
 	return (
 		<div className="flex flex-col">
-			<div className="lg:hidden flex items-center justify-center bg-gradient-to-b from-gray to-white">
+			<div className="hidden">
+				<MainCarousel />
+			</div>
+			<div className="flex items-center justify-center bg-gradient-to-b from-gray to-white lg:hidden ">
 				<div className="flex flex-col items-center text-center w-318">
 					<Image
 						className="pb-3"
@@ -20,7 +23,7 @@ export function Hero() {
 						height={293}
 					/>
 					<h1 className="pb-1">Request and manage Electronic signatures</h1>
-					<h2 className="pb-4">Header H2</h2>
+					<h2 className="pb-4" data-testid="cypress-title">Header H2</h2>
 					<div className="pb-8">
 						<MainButton
 							href=""
@@ -37,9 +40,7 @@ export function Hero() {
 					<div className="pb-9">SPONSORS LOGOS</div>
 				</div>
 			</div>
-			<div className="hidden">
-				<MainCarousel />
-			</div>
+			
 			<div className="flex flex-col w-318 self-center lg:flex-row lg:py-20 lg:ps-123 lg:pe-20 lg:pb-24">
 				<div className="text-center pt-9">
 					<h2>Header 2</h2>

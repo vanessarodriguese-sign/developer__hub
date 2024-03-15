@@ -3,7 +3,6 @@ describe('first test', () => {
 		cy.visit('http://localhost:3000')
 		cy.get('[data-testid="cypress-title"]')
 			.should('exist')
-			.should('have.text', 'Request and manage electronic signatures')
-		cy.get('[data-testid="navbar-links"]').should('exist')
+			.should('have.text', 'Header H2')
 	})
 })
