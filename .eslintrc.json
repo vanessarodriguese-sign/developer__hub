@@ -1,18 +1,19 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "standard-with-typescript"
-  ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "project": "./tsconfig.json",
-    "sourceType": "module"
-  },
-  "rules": {}
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"standard-with-typescript",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"project": "./tsconfig.json",
+		"sourceType": "module"
+	},
+	"rules": {}
 }
