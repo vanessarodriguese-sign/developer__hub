@@ -6,26 +6,24 @@ import NavBar from '../components/NavBar'
 import { Footer } from '@/components/Footer'
 
 interface LayoutProps {
-  children: ReactNode
+	children: ReactNode
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default function RootLayout ({ children }: LayoutProps) {
-  return (
-    <html lang="en" className={nunito.variable}>
-      <body className='flex flex-col h-screen w-screen'>
-        <header>
-          <nav>
-            <NavBar/>
-          </nav>
-        </header>
-        <main className="">
-          {children}
-        </main>
-        <footer className=''>
-          <Footer/>
-        </footer>
-      </body>
-    </html>
-  )
+export default function RootLayout({ children }: LayoutProps) {
+	return (
+		<html lang="en" className={nunito.variable}>
+			<body className="flex flex-col h-screen w-screen">
+				<header>
+					<nav>
+						<NavBar />
+					</nav>
+				</header>
+				<main className="">{children}</main>
+				<footer className="">
+					<Footer />
+				</footer>
+			</body>
+		</html>
+	)
 }
