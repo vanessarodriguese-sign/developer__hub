@@ -7,43 +7,43 @@
 		@apply text-33 leading-40 font-semibold text-dark-blue
             md:text-34 lg:text-5xl
             md:leading-40 lg:leading-49
-          m-0 !important;
+          m-0;
 	}
 	/* h2:36px  ---  mobile h2:28px --- tablet h2:22px*/
 	h2 {
 		@apply text-28 leading-32 font-semibold text-dark-blue
           md:text-22 lg:text-4xl 
           md:leading-30 lg:leading-43
-          m-0 !important;
+          m-0;
 	}
 	/* h3:24px  ---  mobile h3:22px --- tablet h3:18px*/
 	h3 {
 		@apply text-22 leading-26 font-semibold text-navy
           md:text-lg lg:text-2xl 
           md:leading-26 lg:leading-30 
-          m-0 !important;
+          m-0;
 	}
 	/* h4:18px ---  mobile h4:18px --- tablet h4:15px */
 	h4 {
 		@apply text-lg leading-24 font-semibold
           md:text-15 lg:text-lg 
           md:leading-20 lg:leading-24
-          m-0 !important;
+          m-0;
 	}
 
 	/* h5:16px */
 	h5 {
-		@apply text-base font-light m-0 text-black opacity-100 !important;
+		@apply text-base font-light m-0;
 	}
 
 	/* h6:14px */
 	h6 {
-		@apply text-sm leading-16 m-0 !important;
+		@apply text-sm leading-16 m-0;
 	}
 
 	/* p:13px */
 	p {
-		@apply text-13 leading-18 font-extrabold m-0 !important;
+		@apply text-13 leading-18 m-0;
 	}
 }
 
