@@ -31,13 +31,13 @@ export function DropdownMenu() {
 		<>
 			<div className="relative">
 				<button className="cursor-pointer" onClick={toggling}>
-					<Image 
-						data-testid="menu" 
-						className="" 
-						src='https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/e-sign-mobile-menu.svg'
-						alt="Esign Menu" 
-						width={28} 
-						height={20} 
+					<Image
+						data-testid="menu"
+						className=""
+						src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/e-sign-mobile-menu.svg"
+						alt="Esign Menu"
+						width={28}
+						height={20}
 					/>
 				</button>
 				{isOpen && (
