@@ -21,7 +21,9 @@ export function Hero() {
 						height={293}
 					/>
 					<h1 className="pb-1">Request and manage Electronic signatures</h1>
-					<h2 className="pb-4" data-testid="cypress-title">Header H2</h2>
+					<h2 className="pb-4" data-testid="cypress-title">
+						Header H2
+					</h2>
 					<div className="pb-8">
 						<MainButton
 							href=""
@@ -35,8 +37,8 @@ export function Hero() {
 							paddingY="py-2"
 						/>
 					</div>
-					<div className='flex items-center justify-center'>
-						<div className='flex flex-row w-302 px-9 py-3 gap-3 justify-between bg-white'>
+					<div className="flex items-center justify-center">
+						<div className="flex flex-row w-302 px-9 py-3 gap-3 justify-between bg-white">
 							<Image
 								className="items-center"
 								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/beyondly-mono.svg"
@@ -156,10 +158,10 @@ export function Hero() {
 			</div>
 			{/* Part two - Desktop */}
 			<div className="hidden lg:flex lg:flex-row lg:pt-20 lg:px-123 lg:pb-24">
-				<div className='w-475 self-center'>
+				<div className="w-475 self-center">
 					<div className="">
-						<h2 className='pb-2'>Header 2</h2>
-						<h3 className='pb-3'>Header 3</h3>
+						<h2 className="pb-2">Header 2</h2>
+						<h3 className="pb-3">Header 3</h3>
 					</div>
 					<h5 className="pb-5 text-black opacity-100">
 						Integrate E-Sign’s secure API to your software and enhance agreement automation. Some of the
@@ -197,7 +199,7 @@ export function Hero() {
 							<h5 className="ps-1 text-black opacity-100">Live document tracking</h5>
 						</div>
 					</div>
-					
+
 					<div className="pb-5 text-black opacity-100">
 						<h5>
 							Here you’ll find guides to building your integration, and code examples that show you how to
@@ -243,7 +245,7 @@ export function Hero() {
 					/>
 				</div>
 			</div>
-			
+
 			{/* Part three - Mobile */}
 			<div className="flex flex-col pb-16 items-center text-center bg-light-gray lg:hidden">
 				<div className="flex flex-col w-318 pt-8">
@@ -353,14 +355,14 @@ export function Hero() {
 				<div className="flex flex-col items-center">
 					<h2 className="pb-2">Feature Examples</h2>
 					<div className="pb-6 w-740">
-						<h5 className='pb-2 text-black opacity-100'>
+						<h5 className="pb-2 text-black opacity-100">
 							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 							invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
 							et justo duo dolores et ea rebum. Stet clita kasd gubergren,
 						</h5>
 					</div>
 				</div>
-				
+
 				<div className=" flex flex-row gap-5">
 					<div className="flex flex-col grow pt-8 w-360 items-center text-center bg-white">
 						<div className="grow items-center text-center pb-6">
@@ -449,7 +451,6 @@ export function Hero() {
 							/>
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>

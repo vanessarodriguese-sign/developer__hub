@@ -26,7 +26,7 @@ module.exports = {
 				34: '34px',
 			},
 			spacing: {
-				123: '123px'
+				123: '123px',
 			},
 			screens: {
 				sm: { max: '375px' },
@@ -60,7 +60,7 @@ module.exports = {
 				360: '360px',
 				318: '318px',
 				262: '262px',
-				216: '216px'
+				216: '216px',
 			},
 		},
 	},
