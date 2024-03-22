@@ -1,15 +1,26 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { MainButton } from './MainButton'
+
 import NavBarLink from './NavBarLink'
 import { DropdownMenu } from './DropdownMenu'
+import { LightButtonMedium } from './LightButton'
+import { DarkButtonMedium } from './DarkButton'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function NavBar() {
+	const options = [
+		{ label: 'GET STARTED', href: '/' },
+		{ label: 'API REFERENCE', href: '/ApiReference' },
+		{ label: 'API GUIDES', href: '/ApiGuides' },
+		{ label: 'API DEMOS', href: '/ApiDemo' },
+		{ label: 'SUPPORT', href: '/Support' },
+		{ label: 'CHANGELOG', href: '/Changelog' }
+	]
+
 	return (
 		<nav className="bg-dark-blue">
-			<div className="flex flex-row items-center px-9 pt-4 pb-3 lg:px-123 lg:py-10">
+			<div className="flex flex-row items-center px-10 pt-5 pb-3 md:ps-10 md:pe-11 lg:px-32 lg:py-10">
 				<div className="lg:hidden">
 					<Image
 						data-testid="logo"
@@ -20,7 +31,7 @@ export default function NavBar() {
 						height={51}
 					/>
 				</div>
-				<div className="hidden lg:block pe-123">
+				<div className="hidden md:hidden lg:block pe-32">
 					<Image
 						data-testid="logo"
 						className=""
@@ -30,49 +41,23 @@ export default function NavBar() {
 						height={51}
 					/>
 				</div>
+
+				{/* Desktop */}
 				<div className="hidden lg:flex lg:flex-grow lg:items-center lg:text-white" data-testid="navbar-links">
-					{/* For large screens (md and lg) */}
-					<p className="flex-grow font-bold">
-						<NavBarLink href="/" label="GET STARTED" />
-					</p>
-					<p className="flex-grow font-bold">
-						<NavBarLink href="" label="API REFERENCE" />
-					</p>
-					<p className="flex-grow font-bold">
-						<NavBarLink href="" label="API GUIDES" />
-					</p>
-					<p className="flex-grow font-bold">
-						<NavBarLink href="" label="API DEMO" />
-					</p>
-					<p className="flex-grow font-bold">
-						<NavBarLink href="" label="SUPPORT" />
-					</p>
-					<p className="font-bold">
-						<NavBarLink href="" label="CHANGELOG" />
-					</p>
+					{options.map((option) =>(
+						<p key={option.label} className="flex-grow font-bold">
+							<NavBarLink href={option.href} label={option.label} />
+						</p>
+					))}
 				</div>
-				<div className="hidden lg:flex lg:flex-row lg:ml-auto lg:items-center lg:ps-6 lg:gap-4">
-					<MainButton
+				<div className="hidden lg:flex lg:flex-row lg:ml-auto lg:items-center lg:ps-5 lg:gap-4">
+					<LightButtonMedium
 						href=""
 						content="LOGIN"
-						bg="bg-light-blue"
-						color="text-dark-blue"
-						borderColor="border-dark-blue"
-						textSize="text-sm"
-						lineHeight="leading-19"
-						paddingX="px-6"
-						paddingY="py-2"
 					/>
-					<MainButton
+					<DarkButtonMedium
 						href=""
 						content="CONTACT US"
-						bg="bg-dark-blue"
-						color="text-white"
-						borderColor="border-blue"
-						textSize="text-sm"
-						lineHeight="leading-19"
-						paddingX="px-6"
-						paddingY="py-2"
 					/>
 				</div>
 				<div className="flex-grow justify-end flex items-center md:flex-grow md:justify-end md:items-center lg:hidden">

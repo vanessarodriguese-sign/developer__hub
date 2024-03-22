@@ -18,6 +18,9 @@ module.exports = {
 				sans: ['var(--font-nunito)', 'sans-serif'],
 			},
 			fontSize: {
+				8: '8px',
+				9: '9px',
+				10: '10px',
 				13: '13px',
 				15: '15px',
 				22: '22px',
@@ -25,15 +28,13 @@ module.exports = {
 				33: '33px',
 				34: '34px',
 			},
-			spacing: {
-				123: '123px',
-			},
 			screens: {
 				sm: { max: '375px' },
 				md: { min: '376px', max: '820px' },
 				lg: { min: '821px' },
 			},
 			lineHeight: {
+				13: '13px',
 				14: '14px',
 				16: '16px',
 				18: '18px',
@@ -49,9 +50,12 @@ module.exports = {
 			},
 			height: {
 				652: '652px',
+				548: '548px',
+				350: '350px'
 			},
 			width: {
 				1366: '1366px',
+				944:'944px',
 				886: '886px',
 				740: '740px',
 				645: '645px',
@@ -59,8 +63,9 @@ module.exports = {
 				475: '475px',
 				360: '360px',
 				318: '318px',
+				302: '302px',
 				262: '262px',
-				216: '216px',
+				216: '216px'
 			},
 		},
 	},
