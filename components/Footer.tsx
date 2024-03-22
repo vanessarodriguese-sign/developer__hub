@@ -1,124 +1,54 @@
 import React from 'react'
 import Image from 'next/image'
 import NavBarLink from './NavBarLink'
+import { SocialMediaLinks } from './SocialMediaLinks'
+import FooterAdresses from './FooterAdresses'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function Footer() {
+	const options = [
+		{ label: 'DEVELOPER HOME', href: '/' },
+		{ label: 'API REFERENCE', href: '/ApiReference' },
+		{ label: 'API GUIDES', href: '/ApiGuides' },
+		{ label: 'API DEMOS', href: '/ApiDemo' },
+		{ label: 'SUPPORT', href: '/Support' }
+	]
 	return (
 		<div className="bg-dark-blue ">
-			{/* Desktop */}
-			<div className="hidden lg:flex lg:flex-col lg:px-123">
-				<div className="flex flex-row border-b border-blue pb-6 pt-8 flex-grow flex-1 px-52 text-blue">
-					<p className="grow font-extrabold">
-						<NavBarLink href="" label="DEVELOPER HOME" />
-					</p>
-					<p className="grow font-extrabold">
-						<NavBarLink href="/ApiReference" label="API REFERENCE" />
-					</p>
-					<p className="grow font-extrabold">
-						<NavBarLink href="/ApiGuides" label="API GUIDES" />
-					</p>
-					<p className="grow font-extrabold">
-						<NavBarLink href="/ApiDemo" label="API DEMO" />
-					</p>
-					<p className="font-extrabold">
-						<NavBarLink href="/Support" label="SUPPORT" />
-					</p>
+			{/* Desktop and Tablet */}
+			<div className="hidden lg:flex-col lg:px-32 md:flex-col md:ps-10 md:pe-11 md:block lg:block">
+				<div className="flex flex-row border-b border-blue pb-6 pt-8 flex-grow flex-1 px-52 text-blue md:hidden">
+					{options.map((option) => (
+						<p  key={option.href} className="grow font-extrabold">
+							<NavBarLink  href={option.href} label={option.label}/>
+						</p>
+					))}
 				</div>
-				<div className="flex flex-row text-white pt-11 pb-6">
-					<div className="pe-14">
-						<Image
-							className="grow"
-							src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/esign-logo-desktop.svg"
-							alt="Esign Logo"
-							width={151}
-							height={51}
-						/>
-					</div>
-					<div className="flex-grow">
-						<h5 className="leading-5 font-bold">UK</h5>
-						<div className="text-sm">
-							<div>12 Princes Dock, Liverpool</div>
-							<div>L3 1BG </div>
-							<div>E-Sign (UK) Itd © 2024 </div>
-							<div>Company No. 07937425</div>
-							<div>VAT No. 157595663</div>
+				<div className="flex flex-row border-b border-blue pb-6 pt-8 flex-grow flex-1 text-blue md:px-16 lg:hidden">
+					{options.map((option) => (
+						<div key={option.href} className="grow font-extrabold text-10 leading-14">
+							<NavBarLink  href={option.href} label={option.label}/>
 						</div>
-					</div>
-					<div className="flex-grow">
-						<h5 className="leading-5 font-bold">IoM</h5>
-						<div className="text-sm">
-							<div>50 Athol Street, Douglas</div>
-							<div>Isle of Man, IM1 1JB</div>
-							<div>E-Sign Ltd. © 2024</div>
-							<div>Company Registration </div>
-							<div>Number: 130978C</div>
-						</div>
-					</div>
-					<div className="flex-grow">
-						<h5 className="leading-5 font-bold">EU</h5>
-						<div className="text-sm">
-							<div>Five Lamps Place</div>
-							<div>77-80 Amiens St</div>
-							<div>Dublin 1</div>
-							<div>Ireland</div>
-						</div>
-					</div>
-					<div className="">
-						<h5 className="leading-5 font-bold">US</h5>
-						<div className="text-sm">
-							<div>Suite 8500 </div>
-							<div>One World Trade Center</div>
-							<div>New York, 10007</div>
-							<div>United States</div>
-						</div>
-					</div>
+					))}
 				</div>
-				<div className="flex flex-row justify-between pb-11 pt-6">
-					<div className="flex flex-row w-560">
-						<div className="flex-grow text-medium-gray text-sm leading-14">
+				<FooterAdresses/>
+				<div className="flex flex-row justify-between lg:pb-11 lg:pt-6 md:pt-2 md:pb-5 align-baseline">
+					<div className="flex flex-row lg:w-560 md:w-360">
+						<div className="flex-grow text-medium-gray leading-14 md:text-8 lg:text-sm md:font-semibold">
 							<div>© Copyright E-Sign . All Rights Reserved.</div>
 						</div>
-						<div className="flex-grow text-medium-gray text-sm leading-14">
+						<div className="flex-grow text-medium-gray leading-14 md:text-8 lg:text-sm md:font-semibold">
 							<div>Terms of use | Privacy</div>
 						</div>
 					</div>
-					<div className="flex flex-row gap-6">
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/facebooklogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/xlogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/linkedinlogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-					</div>
+					<SocialMediaLinks/>
 				</div>
 			</div>
 
 			{/* Mobile */}
-			<div className="flex flex-col lg:hidden items-center text-medium-gray">
-				<div className="flex flex-col w-318 py-8 items-center lg:flex-row lg:pt-11 lg:pb-8">
-					<div className="pb-2">
+			<div className="flex flex-col items-center text-medium-gray lg:hidden md:hidden">
+				<div className="flex flex-col w-318 py-8 items-center">
+					<div className="pb-5">
 						<Image
 							className="grow"
 							src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/esign-logo-desktop.svg"
@@ -133,35 +63,7 @@ export function Footer() {
 					<div className="grow pb-6 text-sm leading-14 text-medium-gray">
 						<div>© Copyright E-Sign . All Rights Reserved.</div>
 					</div>
-					<div className="flex flex-row gap-6">
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/facebooklogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/xlogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-						<div className="">
-							<Image
-								className=""
-								src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/linkedinlogo.svg"
-								alt=""
-								width={27}
-								height={27}
-							/>
-						</div>
-					</div>
+					<SocialMediaLinks/>
 				</div>
 			</div>
 		</div>
