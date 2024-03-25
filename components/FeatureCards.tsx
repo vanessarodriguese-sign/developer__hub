@@ -46,7 +46,6 @@ const cardData = [
   },
 ]
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function FeatureCards() {
   return (
     <>
@@ -67,7 +66,7 @@ export function FeatureCards() {
     </>
   );
 }
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+
 export function FeatureCard({ src, alt, title, subTitle, description, buttonContent, height, width }: CardProps) {
 	return (
     <div className="flex flex-col m-auto pt-8 items-center text-center bg-white rounded-xl w-302 lg:w-360 lg:h-350">

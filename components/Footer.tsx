@@ -4,7 +4,6 @@ import NavBarLink from './NavBarLink'
 import { SocialMediaLinks } from './SocialMediaLinks'
 import FooterAdresses from './FooterAdresses'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function Footer() {
 	const options = [
 		{ label: 'DEVELOPER HOME', href: '/' },

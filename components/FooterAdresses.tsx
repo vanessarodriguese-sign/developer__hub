@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function FooterAdresses() {
 	return (
 		<>

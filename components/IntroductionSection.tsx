@@ -6,7 +6,6 @@ import { DarkButtonMedium } from './DarkButton'
 import { LightButtonMedium } from './LightButton'
 import { IntroductionItems } from './IntroductionItems'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function IntroductionSection() {
 	const labels = [
 		{ label: 'Signing of documents'},

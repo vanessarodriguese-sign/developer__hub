@@ -1,7 +1,6 @@
 import React from 'react'
 import { FeatureCards } from './FeatureCards'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function FeatureExamples() {
 	return (
     <>

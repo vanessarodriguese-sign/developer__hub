@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function SocialMediaLinks() {
   const links = [
     { src: 'https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/facebooklogo.svg'},
