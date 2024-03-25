@@ -46,7 +46,8 @@ export function MainCarousel() {
 
     return (
 			<>
-				<div className="bg-gradient-to-b from-gray to-light-gray flex-col">
+				<div className="hidden md:hidden lg:block lg:bg-gradient-to-b from-gray to-light-gray lg:flex-col">
+					{/* Desktop */}
 					<div className="px-32 relative h-548 flex flex-row flex-grow items-center pb-3">
 						<div className="absolute top-[50%] -translate-x-0 transla-y-[-50%] left-14 text-5xl text-blue cursor-pointer">
 							<BsChevronLeft onClick={prevSlide} size={32} />
@@ -82,9 +83,9 @@ export function MainCarousel() {
 						</div>
 						<div className='px-16 h-28 bg-gradient-to-l from-light-gray to-white bg-opacity-80'>
 						</div>
-					</div>			
-				</div>
-				
+					</div>
+					
+				</div>				
 			</>
     );
 }

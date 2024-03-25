@@ -18,7 +18,7 @@ export function IntroductionSection() {
 	return (
 		<>
 			{/* Mobile */}
-			<div className="flex flex-col w-318 self-center lg:hidden">
+			<div className="flex flex-col w-318 self-center lg:hidden md:hidden">
 				<div className="text-center pt-9">
 					<h2>Header 2</h2>
 					<h3>Header 3</h3>
@@ -66,8 +66,8 @@ export function IntroductionSection() {
 			</div>
 
 			{/* Desktop */}
-			<div className="hidden lg:flex lg:flex-row lg:flex-grow lg:pt-24 lg:px-32 lg:pb-28">
-				<div className="w-475 self-center">
+			<div className="hidden lg:flex lg:flex-row lg:flex-grow lg:pt-24 lg:px-32 lg:pb-28 md:flex md:flex-row md:flex-grow md:pt-12 md:ps-10 md:pe-11 md:pb-12">
+				<div className="lg:w-475 md:w-368 self-center">
 					<div className="">
 						<h2 className="pb-2">Header 2</h2>
 						<h3 className="pb-3">Header 3</h3>
@@ -107,13 +107,22 @@ export function IntroductionSection() {
 						</div>
 					</div>
 				</div>
-				<div className="ps-8 self-center pt-10 mx-auto text-center">
+				<div className="md:hidden lg:ps-8 lg:self-center lg:pt-10 lg:mx-auto lg:text-center">
 					<Image
 						className=""
 						src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/Dev-illo@2x.png"
 						alt=""
 						width={613}
 						height={353}
+					/>
+				</div>
+				<div className="lg:hidden md:ps-8 md:self-center md:pt-10 md:mx-auto md:text-center">
+					<Image
+						className=""
+						src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/Dev-illo@2x.png"
+						alt=""
+						width={319}
+						height={293}
 					/>
 				</div>
 			</div>  

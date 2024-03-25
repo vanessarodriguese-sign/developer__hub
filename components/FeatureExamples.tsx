@@ -4,9 +4,9 @@ import { FeatureCards } from './FeatureCards'
 export function FeatureExamples() {
 	return (
     <>
-      {/* Mobile */}
-      <div className="flex flex-col pb-14 items-center text-center bg-light-gray lg:hidden">
-				<div className="flex flex-col w-318 pt-12">
+      {/* Mobile & tablet */}
+      <div className="flex flex-col pb-14 items-center text-center bg-light-gray md:flex md:ps-10 md:pe-11 lg:hidden">
+				<div className="flex flex-col w-318 pt-12 md:w-645 md:text-center">
 					<h2 className="pb-1">Feature Examples</h2>
 					<div className="pb-8 text-black opacity-100">
 						<h5>
@@ -19,7 +19,7 @@ export function FeatureExamples() {
         <FeatureCards/>
 			</div>
       {/* Desktop */}
-      <div className="hidden lg:flex lg:flex-col lg:text-center lg:flex-grow lg:bg-light-gray lg:pt-24 lg:px-32 lg:pb-24">
+      <div className="hidden md:hidden flex-col text-center flex-grow bg-light-gray pt-24 px-32 pb-24 lg:block ">
 				<div className="flex flex-col grow items-center pb-6 w-740 self-center">
 					<h2 className="pb-2">Feature Examples</h2>
 						<div className="pb-2 text-black opacity-100">
