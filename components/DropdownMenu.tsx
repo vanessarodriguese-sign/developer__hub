@@ -29,7 +29,7 @@ export function DropdownMenu() {
 
 	return (
 		<>
-			<div className="relative">
+			<div className="relative z-50">
 				<div className='md:hidden'>
 					<button className="cursor-pointer" onClick={toggling}>
 						<Image
@@ -56,19 +56,21 @@ export function DropdownMenu() {
 				</div>
 
 				{isOpen && (
-					<div className="absolute -right-5 top-11 w-216 text-15 leading-26 md:text-xs text-white font-semibold border border-blue">
+					<div className="absolute -right-5 top-11 w-216 text-15 leading-26 md:text-xs md:top-5 md:right-4 text-white font-semibold border border-blue">
 						{options.map((option) => (
 							<div key={option.label} className=''>
 								<MenuLink  href={option.href}>
-									<button className="bg-dark-blue px-3  w-full" onClick={onOptionClicked}>
-										<div className="flex items-center ps-5 pt-4 pb-3 md:py-3 border-b border-blue hover:bg-blue hover:text-base hover:font-extrabold md:hover:text-13 md:hover:leading-26">
-											<div className="grow ">{option.label}</div>
-											<div className='md:hidden'>
+									<button className="bg-dark-blue px-3 w-full" onClick={onOptionClicked}>
+										<div className="flex items-center border-b border-blue hover:bg-blue hover:font-extrabold
+											pt-4 pb-3 hover:text-base
+										  md:font-semibold md:hover:text-13 md:py-3 md:pb-0 md:text-xs md:leading-26">
+											<div className="grow text-left ps-2">{option.label}</div>
+											<div className='md:hidden flex w-11 justify-center'>
 												<IconContext.Provider value={{ size: '1.6em'}}>
 													<MdOutlineKeyboardArrowRight />
 												</IconContext.Provider>
 											</div>
-											<div className='hidden md:block'>
+											<div className='hidden md:flex md:w-11 md:justify-center'>
 												<IconContext.Provider value={{ size: '1.5em'}}>
 													<MdOutlineKeyboardArrowRight />
 												</IconContext.Provider>

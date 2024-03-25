@@ -29,9 +29,9 @@ module.exports = {
 				34: '34px',
 			},
 			screens: {
-				sm: { max: '375px' },
-				md: { min: '376px', max: '820px' },
-				lg: { min: '821px' },
+				sm: { max: '430px' },
+				md: { min: '431px', max: '1024px' },
+				lg: { min: '1025px' },
 			},
 			lineHeight: {
 				13: '13px',
@@ -51,6 +51,7 @@ module.exports = {
 			height: {
 				652: '652px',
 				548: '548px',
+				450: '450px',
 				350: '350px'
 			},
 			width: {
@@ -60,7 +61,9 @@ module.exports = {
 				740: '740px',
 				645: '645px',
 				560: '560px',
+				550: '550px',
 				475: '475px',
+				368: '368px',
 				360: '360px',
 				318: '318px',
 				302: '302px',

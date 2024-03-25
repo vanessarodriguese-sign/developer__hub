@@ -109,7 +109,7 @@ function NormalLogoAnimation() {
 
   return (
     <InfiniteLooper animationDuration={30} direction="left">
-      <div className="hidden lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-24">
+      <div className="hidden md:hidden lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-24">
         {images.map((image, index) => (
           <div key={index}>
             <Image
@@ -122,7 +122,7 @@ function NormalLogoAnimation() {
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-between items-center gap-12 lg:hidden">
+      <div className="flex flex-row justify-between items-center gap-12 md:flex md:flex-row md:items-center md:gap-12 lg:hidden">
         {images.map((image, index) => (
           <div key={index}>
             <Image
