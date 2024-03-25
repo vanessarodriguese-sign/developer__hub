@@ -9,7 +9,6 @@ interface LayoutProps {
 	children: ReactNode
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function RootLayout({ children }: LayoutProps) {
 	return (
 		<html lang="en" className={nunito.variable}>

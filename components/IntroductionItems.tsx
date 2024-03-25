@@ -6,7 +6,6 @@ interface IntroductionItemsProps {
   label: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function IntroductionItems({ label }: IntroductionItemsProps) {
 	return (
     <>
