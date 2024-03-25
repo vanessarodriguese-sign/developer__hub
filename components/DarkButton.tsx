@@ -6,7 +6,6 @@ interface DarkButtonProps {
 	classNames?: string
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function DarkButton({ href, content, classNames }: DarkButtonProps) {
   return (
     <a href={href}>
@@ -17,7 +16,16 @@ function DarkButton({ href, content, classNames }: DarkButtonProps) {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export function DarkButtonExtraLarge({ href, content }: DarkButtonProps) {
+  return (
+    <DarkButton 
+			href={href} 
+			content={content} 
+			classNames='text-15 leading-5 px-20 py-4'
+		/>
+  )
+}
+
 export function DarkButtonLarge({ href, content }: DarkButtonProps) {
   return (
     <DarkButton 
@@ -28,7 +36,6 @@ export function DarkButtonLarge({ href, content }: DarkButtonProps) {
   )
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function DarkButtonMedium({ href, content }: DarkButtonProps) {
   return (
     <DarkButton 
@@ -39,7 +46,6 @@ export function DarkButtonMedium({ href, content }: DarkButtonProps) {
   )
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function DarkButtonSmall({ href, content }: DarkButtonProps) {
   return (
     <DarkButton 

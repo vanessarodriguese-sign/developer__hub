@@ -5,26 +5,34 @@ import { MainCarousel } from '../components/MainCarousel'
 import { DarkButtonLarge } from './DarkButton'
 import { LogoAnimation } from './LogoAnimation'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export function Hero() {
+interface HeroProps {
+	title: string
+	subtitle: string
+	classNames?: string
+	image: string
+	width: number
+	height: number
+}
+
+export function Hero({ title, subtitle, image, width, height, classNames }:HeroProps) {
 	return (
 		<>
 			{/* Mobile  */}
-			<div className="flex items-center justify-center bg-gradient-to-b from-gray to-white lg:hidden ">
+			<div className={`flex items-center justify-center bg-gradient-to-b from-gray to-white lg:hidden ${classNames}`}>
 				<div className='w-318'>
 					<div className="flex flex-col text-center items-center">
 						<Image
-							className="pb-4"
-							src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/Imac-white@2x.png"
+							className="pb-5"
+							src={image}
 							alt=""
-							width={319}
-							height={293}
+							width={width}
+							height={height}
 						/>
-						<h1 className="pb-1">Request and manage Electronic signatures</h1>
+						<h1 className="pb-1">{title}</h1>
 						<h2 className="pb-4" data-testid="cypress-title">
-							Header H2
+							{subtitle}
 						</h2>
-						<div className="pb-9">
+						<div className="pb-8">
 							<DarkButtonLarge
 								href=""
 								content="MAIN CTA"

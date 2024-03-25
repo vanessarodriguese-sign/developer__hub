@@ -6,7 +6,6 @@ interface LightButtonProps {
 	classNames?: string
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function LightButton({ href, content, classNames }:LightButtonProps) {
 	return (
     <a href={href}>
@@ -18,7 +17,16 @@ export function LightButton({ href, content, classNames }:LightButtonProps) {
 	)
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export function LightButtonExtraLarge({ href, content }: LightButtonProps) {
+  return (
+    <LightButton 
+			href={href} 
+			content={content} 
+			classNames='text-15 leading-5 px-20 py-4'
+		/>
+  )
+}
+
 export function LightButtonLarge({ href, content }: LightButtonProps) {
   return (
     <LightButton 
@@ -29,7 +37,6 @@ export function LightButtonLarge({ href, content }: LightButtonProps) {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function LightButtonMedium({ href, content }: LightButtonProps) {
   return (
     <LightButton 
@@ -40,7 +47,6 @@ export function LightButtonMedium({ href, content }: LightButtonProps) {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function LightButtonSmall({ href, content }: LightButtonProps) {
   return (
     <LightButton 

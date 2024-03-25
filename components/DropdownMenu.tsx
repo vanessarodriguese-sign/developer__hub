@@ -4,15 +4,14 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import MenuLink from './MenuLink'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function DropdownMenu() {
 	const [isOpen, setIsOpen] = useState(false)
 
-	// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+
 	const toggling = () => {
 		setIsOpen(!isOpen)
 	}
-	// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+
 	const onOptionClicked = () => {
 		setIsOpen(false)
 	}

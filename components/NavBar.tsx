@@ -7,7 +7,6 @@ import { DropdownMenu } from './DropdownMenu'
 import { LightButtonMedium } from './LightButton'
 import { DarkButtonMedium } from './DarkButton'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function NavBar() {
 	const options = [
 		{ label: 'GET STARTED', href: '/' },
