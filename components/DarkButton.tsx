@@ -9,21 +9,11 @@ interface DarkButtonProps {
 function DarkButton({ href, content, classNames }: DarkButtonProps) {
   return (
     <a href={href}>
-      <div className={`dark-button border rounded font-extrabold bg-dark-blue text-white border-blue ${classNames}`}>
+      <div className={`dark-button border rounded bg-dark-blue text-white border-blue ${classNames}`}>
         {content}
       </div>
     </a>
   );
-}
-
-export function DarkButtonExtraLarge({ href, content }: DarkButtonProps) {
-  return (
-    <DarkButton 
-			href={href} 
-			content={content} 
-			classNames='text-15 leading-5 px-20 py-4'
-		/>
-  )
 }
 
 export function DarkButtonLarge({ href, content }: DarkButtonProps) {
@@ -31,7 +21,7 @@ export function DarkButtonLarge({ href, content }: DarkButtonProps) {
     <DarkButton 
 			href={href} 
 			content={content} 
-			classNames='text-15 leading-5 px-8 py-3'
+			classNames='text-15 leading-5 px-8 py-3 font-extrabold'
 		/>
   )
 }
@@ -41,7 +31,7 @@ export function DarkButtonMedium({ href, content }: DarkButtonProps) {
     <DarkButton 
 			href={href} 
 			content={content} 
-			classNames='text-sm leading-19 px-7 py-2'
+			classNames='text-sm leading-19 px-6 py-2 font-extrabold'
 		/>
   )
 }
@@ -51,7 +41,7 @@ export function DarkButtonSmall({ href, content }: DarkButtonProps) {
     <DarkButton 
 			href={href} 
 			content={content} 
-			classNames='text-xs leading-6 px-7 py-2'
+			classNames='text-xs leading-6 px-7 py-2 font-extrabold'
 		/>
   )
 }

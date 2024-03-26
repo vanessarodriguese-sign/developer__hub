@@ -18,7 +18,7 @@ export function IntroductionSection() {
 	return (
 		<>
 			{/* Mobile */}
-			<div className="flex flex-col w-318 self-center lg:hidden md:hidden">
+			<div className="flex flex-col px-9 self-center lg:hidden md:hidden">
 				<div className="text-center pt-9">
 					<h2>Header 2</h2>
 					<h3>Header 3</h3>

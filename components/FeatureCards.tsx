@@ -51,7 +51,7 @@ export function FeatureCards() {
     <>
       {/* Mobile */}
       <div className="flex justify-center lg:hidden">
-        <div className="flex flex-col w-318 gap-8 md:ps-10 md:pe-11 ">
+        <div className="flex flex-col px-9 gap-8 md:ps-10 md:pe-11 ">
           {cardData.map((card, index) => (
             <FeatureCard key={index} {...card} />
           ))}

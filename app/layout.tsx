@@ -15,12 +15,12 @@ export default function RootLayout({ children }: LayoutProps) {
 			<body className="flex flex-col h-screen w-screen">
 				<header>
 					<nav>
-						<NavBar />
+						<NavBar/>
 					</nav>
 				</header>
 				<main className="">{children}</main>
 				<footer className="">
-					<Footer />
+					<Footer/>
 				</footer>
 			</body>
 		</html>
