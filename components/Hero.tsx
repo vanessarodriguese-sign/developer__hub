@@ -57,7 +57,7 @@ export function Hero({ title, subtitle, image, width, height }:HeroProps) {
 				<div className='flex flex-row justify-between'>
 					<div className="flex flex-col w-416 pt-32">
 						<h1 className="pb-1">{title}</h1>
-						<h2 className="pb-5" data-testid="cypress-title">
+						<h2 className="pb-5">
 							{subtitle}
 						</h2>
 						<div className="self-start">
