@@ -4,8 +4,8 @@ import { GoPlus } from "react-icons/go"
 import { IconContext } from 'react-icons'
 
 interface FaqProps {
-  answer?: any
-  question?: any
+  answer?: string
+  question?: string
 }
 
 export const FaqQuestion = ({ question, answer }: FaqProps) => {

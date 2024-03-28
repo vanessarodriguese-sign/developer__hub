@@ -9,10 +9,10 @@ module.exports = {
 				navy: '#09164F',
 				blue: '#68C6DF',
 				'light-blue': '#F2F7FD',
-				'dark-gray': '#464B50',
+				'dark-gray': '#7C8896',
 				'medium-gray': '#CBCBCB',
 				gray: '#E2E2E2',
-				'light-gray': '#F8F8F8',
+				'light-gray': '#F8F8F8'
 			},
 			fontFamily: {
 				sans: ['var(--font-nunito)', 'sans-serif'],
