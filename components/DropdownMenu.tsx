@@ -23,7 +23,7 @@ export function DropdownMenu() {
 		{ label: 'API DEMOS', href: '/ApiDemo' },
 		{ label: 'SUPPORT', href: '/Support' },
 		{ label: 'CHANGELOG', href: '/Changelog' },
-		{ label: 'LOG IN', href: '/' },
+		{ label: 'LOG IN', href: '/Dashboard' },
 		{ label: 'CONTACT US', href: '/' },
 	]
 
