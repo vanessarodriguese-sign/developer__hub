@@ -19,7 +19,7 @@ export default function NavBar() {
 
 	return (
 		<nav className="bg-dark-blue">
-			<div className="flex flex-row items-center px-10 pt-5 pb-3 md:ps-10 md:pe-11 lg:px-32 lg:py-10">
+			<div className="flex flex-row items-center px-9 pt-5 pb-3 md:ps-10 md:pe-11 lg:px-32 lg:py-10">
 				<div className="lg:hidden">
 					<Image
 						data-testid="logo"

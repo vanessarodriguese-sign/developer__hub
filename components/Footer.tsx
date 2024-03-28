@@ -46,10 +46,10 @@ export function Footer() {
 
 			{/* Mobile */}
 			<div className="flex flex-col items-center text-medium-gray lg:hidden md:hidden">
-				<div className="flex flex-col w-318 py-8 items-center">
+				<div className="flex flex-col px-9 py-8 items-center">
 					<div className="pb-5">
 						<Image
-							className="grow"
+							className=""
 							src="https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/esign-logo-desktop.svg"
 							alt="Esign Logo"
 							width={151}

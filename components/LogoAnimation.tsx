@@ -109,11 +109,12 @@ function NormalLogoAnimation() {
 
   return (
     <InfiniteLooper animationDuration={30} direction="left">
-      <div className="hidden md:hidden lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-24">
+      {/* Desktop */}
+      <div className="hidden md:hidden lg:flex lg:flex-row lg:justify-between lg:items-center">
         {images.map((image, index) => (
           <div key={index}>
             <Image
-              className="items-center"
+              className="items-center me-24"
               src={image.src}
               alt=""
               width={130}
@@ -122,11 +123,12 @@ function NormalLogoAnimation() {
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-between items-center gap-12 md:flex md:flex-row md:items-center md:gap-12 lg:hidden">
+      {/* Mobile and Tablet */}
+      <div className="flex flex-row justify-between items-center md:flex md:flex-row md:items-center lg:hidden">
         {images.map((image, index) => (
           <div key={index}>
             <Image
-              className="items-center"
+              className="items-center me-12"
               src={image.src}
               alt=""
               width={80}
