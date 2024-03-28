@@ -19,7 +19,6 @@ export default function Page() {
 					image='https://pub-531fb711a1e749c0970b273ab0ee90ec.r2.dev/Imac-white@2x.png'
 					width={319}
 					height={293}
-					classNames='px-9'
 				/>
 			</div>
 
