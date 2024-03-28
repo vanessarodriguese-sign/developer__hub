@@ -16,29 +16,27 @@ export const FaqQuestion = ({ question, answer }: FaqProps) => {
   }
 
   return (
-    <div className="">
-      <div className="border-b-2 border-gray">
-        <div
-          className="flex justify-between items-center cursor-pointer"
-          onClick={handleToggleQuestion}
-        >
-          <div className="flex justify-left py-6 items-center">
-            {question}
-          </div>
-          <IconContext.Provider value={{ size: '1.3em'}}>
-            <GoPlus/>
-          </IconContext.Provider>
+    <div className="border-b-2 border-gray lg:flex lg:flex-grow">
+      <div
+        className="flex flex-grow justify-between items-center cursor-pointer"
+        onClick={handleToggleQuestion}
+      >
+        <div className="flex justify-left py-6 items-center">
+          {question}
         </div>
-        {isOpen && (
-          <div className="pt-4 flex">
-            <div>
-              <div className=''>
-                {answer}
-              </div>
+        <IconContext.Provider value={{ size: '1.3em'}}>
+          <GoPlus/>
+        </IconContext.Provider>
+      </div>
+      {isOpen && (
+        <div className="pt-4 flex">
+          <div>
+            <div className=''>
+              {answer}
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -77,8 +75,7 @@ export const Faq = () => {
 
   return (
     <div
-      className='pb-12 px-9 text-15 leading-26 text-dark-blue bg-white font-normal'
-      id="faq"
+      className='pb-12 text-15 leading-26 text-dark-blue bg-white font-normal flex-grow'
     >
       {questions.map((item: any, index: number) => (
           <FaqQuestion
